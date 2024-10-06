@@ -32,9 +32,10 @@ function Autocomplete() {
         value={inputValue}
         onChange={handleChange}
         placeholder="Type a fruit..."
+        data-testid="autocomplete-input"
       />
       {suggestions.length > 0 && (
-        <ul>
+        <ul data-testid="suggestion-list">
           {suggestions.map((suggestion, index) => (
             <li
               key={index}
